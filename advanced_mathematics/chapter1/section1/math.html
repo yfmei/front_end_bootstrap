@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>LaTex语法</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <!--基础css -->
+    <!--<link rel="stylesheet" href="../../css/common.css">-->
+    <link rel="stylesheet" href="math.css">
+    <!--mathjax 预加载-->
+    <link rel="dns-prefetch" href="//cdn.bootcss.com"/>
+    <!--HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- LaTex 语法
+1、行math $ 数学公式$
+2、math块
+```math
+  公式
+```
+-->
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Fixed navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+        <ul class="nav nav-pills flex-column" id="menu">
+          <li class="nav-item">
+            <a class="nav-link active" href="#title">LaTex语法 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#type">语法类型</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#basic">基本语法</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#composite">综合应用</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#calculator">函数绘图</a>
+          </li>
+        </ul>
+
+      </nav>
+      <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
+        <!--<h1>Dashboard</h1>-->
+
+        <!--<section class="row text-center placeholders">-->
+          <!--<div class="col-6 col-sm-3 placeholder">-->
+            <!--<img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">-->
+            <!--<h4>Label</h4>-->
+            <!--<div class="text-muted">Something else</div>-->
+          <!--</div>-->
+          <!--<div class="col-6 col-sm-3 placeholder">-->
+            <!--<img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">-->
+            <!--<h4>Label</h4>-->
+            <!--<span class="text-muted">Something else</span>-->
+          <!--</div>-->
+          <!--<div class="col-6 col-sm-3 placeholder">-->
+            <!--<img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">-->
+            <!--<h4>Label</h4>-->
+            <!--<span class="text-muted">Something else</span>-->
+          <!--</div>-->
+          <!--<div class="col-6 col-sm-3 placeholder">-->
+            <!--<img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">-->
+            <!--<h4>Label</h4>-->
+            <!--<span class="text-muted">Something else</span>-->
+          <!--</div>-->
+        <!--</section>-->
+
+        <h2>Section title</h2>
+        <div id="title" class="row">
+          <div class="col-4"></div>
+          <div class="col-6">LaTex 语法</div>
+          <div class="col4"></div>
+        </div>
+        <div class="row">
+          <div class="col-12">When \(a \ne 0\),there are two solutions to \(ax^2 + bx + c = 0\) and they ar\( x = {-b \pm \sqrt{b^2-4ac} \over 2a}. \)</div>
+        </div>
+        <div id="type" class="row">
+          <div class="col-4"></div>
+          <div class="col-6">语法类型</div>
+          <div class="col4"></div>
+        </div>
+        <div class="row">
+          <div class="col-12">1、行math&nbsp;:&nbsp;<a href="">$ 数学公式$</a> </div>
+        </div>
+        <div class="row">
+          <div class="col-12">2、math块&nbsp;:&nbsp;
+            <code>
+              ```math
+              公式
+              ```
+            </code></div>
+        </div>
+        <div id="basic" class="row">
+          <div class="col-4"></div>
+          <div class="col-6">基本语法</div>
+          <div class="col4"></div>
+        </div>
+        <div class="row">
+          <div class="col-4"><a href="#">不等号&nbsp;:</a>&nbsp;<span>\(a \ne 0\)</span><span>a \ne 0</span></div>
+          <div class="col-4"><a href="#">分数&nbsp;:</a>&nbsp;<span>\( \tfrac{1}{2} \)</span> <span>\tfrac{1}{2}</span></div>
+          <div class="col-4"><a href="#">分数&nbsp;:</a>&nbsp;<span>\( \frac{1}{2} \)</span> <span>\frac{1}{2}</span></div>
+        </div>
+        <div class="row">
+          <div class="col-4"><a href="#">放大的分数&nbsp;:</a>&nbsp;<span>\( \dfrac{1}{2} \)</span> <span>\dfrac{1}{2} </span></div>
+          <div class="col-4"><a href="#">上标&nbsp;:</a>&nbsp;<span>\( a^n \)</span> <span>a^n</span></div>
+          <div class="col-4"><a href="#">下标&nbsp;:</a>&nbsp;<span>\( a_n \)</span> <span>a_n</span></div>
+        </div>
+        <div class="row">
+          <div class="col-4"><a href="#">乘号&nbsp;:</a>&nbsp;<span>\( 1\times 2 \)</span> <span>1\times 2</span></div>
+          <div class="col-4"><a href="#">左右括号&nbsp;:</a>&nbsp;<span>\(3=\left(\frac{3\times4}{4}\right)\)</span> <span>3=\left(\frac{3\times4}{4}\right)</span></div>
+          <div class="col-4"><a href="#">空格&nbsp;:</a>&nbsp;<span>\( \, \)</span> <span>\,</span></div>
+        </div>
+        <div class="row">
+          <div class="col-4"><a href="#">正无穷&nbsp;:</a>&nbsp;<span>\( \infty \)</span> <span>\infty</span></div>
+          <div class="col-4"><a href="#">求和&nbsp;:</a>&nbsp;<span>\( \sum_{} \)</span> <span>\sum_{}</span></div>
+          <div class="col-4"><a href="#">\phi&nbsp;:</a>&nbsp;<span>\( \phi \)</span> <span>\phi</span></div>
+        </div>
+        <div class="row">
+          <div class="col-4"><a href="#">希腊字母&nbsp;:</a>&nbsp;<span>\( \kappa \)</span> <span>\kappa</span></div>
+          <div class="col-4"><a href="#">\pi&nbsp;:</a>&nbsp;<span>\( \pi \)</span> <span>\pi</span></div>
+          <div class="col-4"><a href="#">正弦&nbsp;:</a>&nbsp;<span>\( \sin \)</span> <span>\sin</span></div>
+        </div>
+        <div class="row">
+          <div class="col-4"><a href="#">实数&nbsp;:</a>&nbsp;<span>\( R \)</span> <span>R</span></div>
+          <div class="col-4"><a href="#">希腊字母&nbsp;:</a>&nbsp;<span>\( \partial \)</span> <span>\partial</span></div>
+          <div class="col-4"><a href="#">积分&nbsp;:</a>&nbsp;<span>\( \int \)</span> <span>\int</span></div>
+        </div>
+        <div id="composite" class="row">
+          <div class="col-4"></div>
+          <div class="col-6">综合应用</div>
+          <div class="col4"></div>
+        </div>
+        <div class="row">
+          <div class="col-12"><a href="#">``` \oint_C x^3 dx+4y^2 dy ```&nbsp;:</a>&nbsp;<span>\oint_C x^3\,dx+4y^2\,dy</span></div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <a href="#">
+              ```
+              2 = (\frac{(3-x)\times 2}{3-x})
+              ```&nbsp;:
+            </a>&nbsp;
+            <span>2 = (\frac{(3-x)\times 2}{3-x})</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <a href="#">
+              ```
+              \sum_{m=1}^\infty \sum_{n=1}^\infty\frac{m^2\,n}{3^m(m\,3^n+n\,3^m)}
+              ```&nbsp;:
+            </a>&nbsp;
+            <span>\sum_{m=1}^\infty \sum_{n=1}^\infty\frac{m^2\,n}{3^m(m\,3^n+n\,3^m)}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <a href="#">
+              ```
+              \phi_n(\kappa) = \frac{1}{4\pi^2\kappa^2}
+              \int_0^\infty
+              \frac{\sin(\kappa R)}{\kappa R}
+              \frac{\partial}{\partial R}
+              [R^2\frac{\partial D_n(R)}{\partial R}]\, dR
+              ```&nbsp;:
+            </a>&nbsp;
+            <span>\phi_n(\kappa) = \frac{1}{4\pi^2\kappa^2}\int_0^\infty\frac{\sin(\kappa R)}{\kappa R}\frac{\partial}{\partial R}[R^2\frac{\partial D_n(R)}{\partial R}]\, dR</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <a href="#">
+              ```
+              \dfrac{\tfrac{1}{2}[1-(\tfrac{1}{2})^n]}{1-\tfrac{1}{2}} = s_n
+              ```&nbsp;:
+            </a>&nbsp;
+            <span>\dfrac{\tfrac{1}{2}[1-(\tfrac{1}{2})^n]}{1-\tfrac{1}{2}} = s_n</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <a href="#">```\sum_{m=1}^\infty```&nbsp;:</a>&nbsp;<span>\sum_{m=1}^\infty</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <a href="#" >
+              ```
+              \sum_{m=1}^\infty \sum_{n=1}^\infty\frac{m^2\,n}{3^m\left(m\,3^n+n\,3^m\right)}
+              ```&nbsp;:
+            </a>&nbsp;
+            <span>\sum_{m=1}^\infty \sum_{n=1}^\infty\frac{m^2\,n}{3^m\left(m\,3^n+n\,3^m\right)}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-6">函数绘图</div>
+          <div class="col4"></div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div id="calculator" class="w-100" style=" height: 400px;"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+</div>
+
+<!--jQuery文件. 务必在bootstrap.min.js 之前引入 -->
+<script src="//cdn.bootcss.com/jquery/2.0.0/jquery.js"></script>
+
+
+<script src="math.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../../assets/js/vendor/popper.min.js"></script>
+
+<!--最新的 Bootstrap js文件 -->
+<script src="../../js/bootstrap.min.js"></script>
+<!--mathjax 核心js-->
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<!--desmos 数学绘图插件 -->
+<script src="https://www.desmos.com/api/v0.9/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6&lang=zh-CN"></script>
+<!--数学相关js. 在mathjax和desmos之后引入 -->
+<script src="../../js/math.function.js"></script>
+<!--基础js -->
+<script src="../../js/common.js"></script>
+</body>
+</html>

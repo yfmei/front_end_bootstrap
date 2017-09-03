@@ -1,0 +1,267 @@
+/**
+ * @author yfmei
+ * @date 2017/9/1
+ * @time 11:03
+ */
+/*颜色*/
+.error{
+  color: #FF4136;
+}
+.ok{
+  color: #00CC00;
+}
+.blue{
+  color: #337ab7;
+}
+.warn{
+  color: #FFCC00
+}
+.black{
+  color: #000;
+}
+.info{
+  color: #d5d5d5;
+}
+.white{
+  color: #ffffff;
+}
+/*背景*/
+.bg-black{
+  background: #000;
+}
+.bg-grey{
+  background: #5a5a5a;
+}
+/*布局*/
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.abs{
+  position: absolute;
+}
+.pos{
+  position: relative;
+}
+
+/*显示*/
+.hide{
+  display: none;
+}
+/*
+span 内联元素: 不能换行不能指定大小 默认span
+div  块级元素: 可以换行可以指定大小 默认block
+*/
+
+.block{
+  display: block;
+}
+.inline{
+  display: inline;
+}
+/*不换行可以指定大小*/
+.ib{
+  display: inline-block;
+}
+
+
+/*水平居中*/
+
+.text-center{
+  text-align: center;
+}
+.mg0a{
+  /*需要设置宽度*/
+  margin:0 auto;
+}
+
+/*垂直居中*/
+/*无法使图片居中*/
+.lh50{
+  line-height: 50px;
+}
+.pc10{
+  padding: 10px 0;
+}
+.pc30{
+  padding: 30px 0;
+}
+/*图片也可居中*/
+.dtc50{
+  display: table-cell;
+  vertical-align: middle;
+  height: 50px;
+}
+
+/*大小*/
+.w20{
+  width: 20px;
+}
+.w50{
+  width: 50px;
+}
+.w100{
+  width: 100px;
+}
+.w50p{
+  width: 50%;
+}
+.w80p{
+  width: 80%;
+}
+.w90p{
+  width: 90%;
+}
+.w100p{
+  width: 100%;
+}
+.h20{
+  height: 20px;
+}
+.h50{
+  height: 50px;
+}
+.h100{
+  height: 100px;
+}
+.h50p{
+  height: 50%;
+}
+.h100p{
+  height: 100%;
+}
+
+/*容器*/
+.container{
+  height: 100%;
+  width: 100%;
+}
+
+/*鼠标样式*/
+.cursor-point{
+  cursor: pointer;
+}
+.cursor-help{
+  cursor: help;
+}
+.cursor-crosshair{
+  cursor: crosshair;
+}
+.cursor-wait{
+  cursor: wait;
+}
+.cursor-text{
+  cursor: text;
+}
+/*去掉a的下划线*/
+a{
+  text-decoration: none;
+}
+/* 已访问 */
+a:visited {
+  color: #337ab7;
+}
+/* 初始状态 */
+/* 注意访问过就改变*/
+a:link {
+  color: #337ab7;
+}
+/* 鼠标悬浮 */
+a:hover{
+  background-color: #f1f1f1;
+}
+/* 点击未释放 */
+a:active {
+  color: #ffffff;
+}
+nav{
+  display: block;
+  position: center;
+  color: #888;
+}
+/*边框*/
+.border{
+  border: 1px solid lightgrey;
+}
+.bt1{
+  border-top: 1px solid lightgrey;
+}
+.br1{
+  border-right: 1px solid lightgrey;
+}
+.bb1{
+  border-bottom:  1px solid lightgrey;
+}
+.bl1{
+  border-left: 1px solid lightgrey;
+}
+
+/*外边距*/
+.mg{
+  margin: 5px 5px 5px 5px;
+}
+.mt10{
+  margin-top: 10px;
+}
+.mr10{
+  margin-right: 10px;
+}
+.mb10{
+  margin-bottom: 10px;
+}
+.ml10{
+  margin-left: 10px;
+}
+.ml50{
+  margin-left: 50px;
+}
+.ml-50{
+  margin-left: -36px;
+}
+/*内边距*/
+.padding{
+  padding: 5px 5px 5px 5px;
+}
+.pt10 {
+  padding-top: 10px;
+}
+.pr10{
+  padding-right: 10px;
+}
+.pb10{
+  padding-bottom: 10px;
+}
+.pl10{
+  padding-left: 10px;
+}
+
+/*左边不能有浮动元素*/
+.clear-l{
+  clear: left;
+}
+.clear-r{
+  clear: right;
+}
+/*重叠权重*/
+.zis{
+  z-index:-1;
+}
+.zib{
+  z-index: 10;
+}
+
+/*图片大小*/
+.img50{
+  width: 50px;
+  height: 50px;
+}
+
+/*字体大小*/
+.fz12{
+  font-size: 12px;
+}
+
+
+
